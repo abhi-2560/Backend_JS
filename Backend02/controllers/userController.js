@@ -35,7 +35,6 @@ export const getUsers = (req, res) => {
     const filteredUsers = users.filter(user => user.role === role);
     return res.status(200).json(filteredUsers);
   }
-
   res.status(200).json(users);
 };
 
